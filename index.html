@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Econ Marketplace</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        /*Used for body color*/
+        body {
+            background-color: green;
+            overflow: hidden;
+        }
+        
+        @keyframes changeColors {
+            0% {
+                background-color: #21524A;
+            }
+            20% {
+                background-color: #26564e;
+            }
+            40% {
+                background-color: #2b685e;
+            }
+            60% {
+                background-color: #1e5f54;
+            }
+            80% {
+                background-color: #14423a;
+            }
+            100% {
+                background-color: #225b52;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--In the middle -->
+    <div id="spotLight"></div>
+    <div id="index">
+        <div id="button" style="cursor: pointer;" onclick="clicked()">THE ECON MARKETPLACE</div>
+    </div>
+    
+    
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <script>
+        let count = 0
+        let msg = document.getElementById("button")
+        function clicked () {
+            if (count == 0) {
+                msg.innerHTML = 'Joke lang di mo toh "ichecheck"'
+                count++
+            } else if (count == 1) {
+                msg.innerHTML = "I don't know if you think about <br>this day or anything, pero for me lang,"
+                count++
+            } else if (count == 2) {
+                msg.innerHTML = "It's just something special <br>na gusto ko icelebrate w you abtt"
+                count++
+            } else if (count == 3) {
+                msg.innerHTML = "It's been a yearr kaya I just <br>wanted to make a little trip down memory lane:)<br><br><span style='font-size:small'>hui kaname mo memory lane louiselane hehe<br>oki suri na amana ko iclick mo na toh pls</span>"
+                count++
+            } else if (count == 3) {
+                msg.innerHTML = "actually kakacheck ko lang its <br>the 28th pala pero itoh na cuz TECHNICALLY 365 days KASI leap year ngayon:)"
+                count++
+            } else if (count == 4) {
+                
+                setTimeout(function() {
+                    document.getElementById('button').remove()
+                }, 1000);
+                setTimeout(function() {
+                    document.getElementById('circle1').style.animation = "nextPage 0.7s linear"
+                }, 1075);
+                setTimeout(function() {
+                    document.getElementById('circle2').style.animation = "nextPage 0.45s linear"
+                }, 1250);
+                setTimeout(function() {
+                    document.getElementById('circle3').style.opacity = 1
+                    document.getElementById('circle3').style.width = '10000px'
+                    document.getElementById('circle3').style.height = '10000px'
+                }, 1750);
+                setTimeout(function() {
+                    window.location.href = "home.html";
+                }, 1750);
+            }
+            
+        }
+    </script>
+</body>
+</html>

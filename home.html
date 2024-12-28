@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Foryouu</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body style="background-color: rgb(168, 168, 245);">
+    <div id="header">Click The Images</div>
+
+    <div class="leftimagecontainer">
+        <div class="image">
+            <img src="images/1Dec28.jpg" onclick="imageClicked(1)">
+            <br>
+            December 28, 2023
+        </div>
+        <div class="image">
+            <img src="images/3feb13.jpg" onclick="imageClicked(3)">
+            <br>
+            February 3, 2024
+        </div>
+        <div class="image">
+            <img src="images/5idk.jpg" onclick="imageClicked(5)">
+            <br>
+            Nakalimutan ko na huhu
+        </div>
+        <div class="image">
+            <img src="images/7mar24.jpg" onclick="imageClicked(7)">
+            <br>
+            March 24, 2024
+        </div>
+        <div class="image">
+            <img src="images/9apr7.jpg" onclick="imageClicked(9)">
+            <br>
+            April 7, 2024
+        </div>
+        <div class="image">
+            <img src="images/92may24.jpg" onclick="imageClicked(11)">
+            <br>
+            May 24, 2024
+        </div>
+    </div>
+
+    <div class="rightimagecontainer">
+        <div class="image">
+            <img src="images/2dec30.jpg" onclick="imageClicked(2)">
+            <br>
+            December 30, 2024
+        </div>
+        <div class="image">
+            <img src="images/4feb14.jpg" onclick="imageClicked(4)">
+            <br>
+            February 14, 2024
+        </div>
+        <div class="image">
+            <img src="images/6mar3.jpg" onclick="imageClicked(6)">
+            <br>
+            Mar 3, 2024
+        </div>
+        <div class="image">
+            <img src="images/8apr1.jpg" onclick="imageClicked(8)">
+            <br>
+            April 1, 2024
+        </div>
+        <div class="image">
+            <img src="images/91may9.jpg" onclick="imageClicked(10)">
+            <br>
+            May 9, 2024
+        </div>
+        <div class="image">
+            <img src="images/93jun13.jpg" onclick="imageClicked(12)">
+            <br>
+            June 13, 2024
+        </div>
+    </div>
+
+    <div class="middleimagecontainer">
+        <div class="image">
+            <img src="images/mid1june14.jpg" onclick="imageClicked(13)">
+            <br>
+            June 14, 2024
+        </div>
+    </div>
+
+    
+    <div class="leftimagecontainer" style="top: 630%; height: 250%;">
+        
+        <div class="image">
+            <img src="images/94aug30.jpg" onclick="imageClicked(14)">
+            <br>
+            August 30, 2024
+        </div>
+        <div class="image">
+            <img src="images/96nov28.jpg" onclick="imageClicked(16)">
+            <br>
+            November 28, 2024
+        </div>
+        <div class="image">
+            <img src="images/98dec22.jpg" onclick="imageClicked(18)">
+            <br>
+            December 22, 2024
+        </div>
+    </div>
+
+    <div class="rightimagecontainer" style="top: 630%; height: 250%;">
+
+        <div class="image">
+            <img src="images/95oct30.jpg" onclick="imageClicked(15)">
+            <br>
+            October 30, 2024
+        </div>
+        <div class="image">
+            <img src="images/97dec13.jpg" onclick="imageClicked(17)">
+            <br>
+            December 13, 2024
+        </div>
+    </div>
+
+    <div id="messageBox">
+        
+        <div id="message"></div>
+        <div id="exitButton" onclick="exit()">X</div>
+    </div>
+
+    <div class="verticalLine">
+        <div class="horizontalLine" style="top: 8%; left: -350px;"></div>
+        <div class="horizontalLine" style="top: 16%; left: 0px;"></div>
+        <div class="horizontalLine" style="top: 24%; left: -350px;"></div>
+        <div class="horizontalLine" style="top: 32%; left: 0px;"></div>
+        <div class="horizontalLine" style="top: 40%; left: -350px;"></div>
+        <div class="horizontalLine" style="top: 48%; left: 0px;"></div>
+        <div class="horizontalLine" style="top: 56%; left: -350px;"></div>
+        <div class="horizontalLine" style="top: 64%; left: 0px;"></div>
+        <div class="horizontalLine" style="top: 70%; left: -350px;"></div>
+        <div class="horizontalLine" style="top: 75%; left: 0px;"></div>
+        <div class="horizontalLine" style="top: 83%; left: -350px;"></div>
+        <div class="horizontalLine" style="top: 91%; left: 0px;"></div>
+    </div>
+    <div class="verticalLine" style="top: 600%; height: 2000px;">
+        <div class="horizontalLine" style="top: 24%; left: -350px;"></div>
+        <div class="horizontalLine" style="top: 32%; left: 0px;"></div>
+        <div class="horizontalLine" style="top: 55%; left: -350px;"></div>
+        <div class="horizontalLine" style="top: 77%; left: 0px;"></div>
+        <div class="horizontalLine" style="top: 85%; left: -350px;"></div>
+    </div>
+
+
+    <script>
+        const message = document.getElementById("message")
+        function imageClicked(number) {
+            document.getElementById("messageBox").style.display = "block";
+            switch(number) {
+                case 1:
+                    message.innerHTML = "It was the day I couldn't get you out of my mind. Ang lala ng pagiisip ko kung paano ko sasabihin ang nararamdaman ko sayo. On that day I was so sure of it talaga na you're going to reject me. I told myself that I'd do it because I know for myself noon that I wouldn't even be close to being with someone na kagaya mo, and I knew for myself naman that I'd then be able to just get rid of yung feelings ko by around the new year and move on knowing that nothing would happen. But when you texted me after that day, I believed na meron akong chance kahit gaanong kaliit, to be able to be with you, louise. And I'm glad I took that chance na sabihin sayo yung damdamin ko."
+                    break;
+                case 2:
+                    message.innerHTML = "This was the first song of the week ko na about sayo. Di ko alam kung nahahalata mo ba o hindi pero lahat ng song of the weeks na ginawa ko dati was always smth related to how i felt on that week. And the weeks after the time I confessed, all i feel is wanting to be with you, kahit ngayon, and that's why naglalagay ako ng kahit anong kanta sa story ko, pero its all about you and how I really felt about you. I believe mas nahalata mo lang toh noong i actually posted pictures of us and i put a song of the week, pero in reality, ginagawa ko na since this day 😅"
+                    break;
+                case 3:
+                    message.innerHTML = "I believe ito yung isa sa mga una nating like hangout or not even hangout pero just practice para sa dance sa filipino. I couldn't get myself to stop looking at you knowing na there would be something between us. Pasensya di ako smooth nung nagpapicture ako sayo, kinikilig kasi ako kaya ginawa ko noon, nagpicture muna ako kina jay at yung iba para di mo mahalata na gusto ko rin magpic w u😭"
+                    break;
+                case 4:
+                    message.innerHTML = "And ito naa. Valentines day. I remembered asking you like a few days before kung pwede ba tayo magkavalentines and I used a website to do itt. I know it wasn't a usual way of asking kung pwede ba ikaw maging kavalentines ko pero its a passion I loved doing kaya mixing that passion with what I felt for you was def worth it. When you said yes I was so happy kasi I believe that was idk kung the first but definitely one of the first valentines I had with someone special(you) and I'm glad to have spent it with you. I remember on feb 14, trying to give you a letter for each period. I was scared a bit noon kasi baka magsawa ka sa daming letters na binigay ko HAHAHHAHAHA pero in the end, worth it naman din kasi nakita ko ngiti moo. Other than thatt thank you ulit sa maliit na bulaklakk. Lagi ko nang dala yun para pampagoodluck sa lahat ng competition ko:)"
+                    break;
+                case 5:
+                    message.innerHTML = "At ito naa. Birthday moo. I hope nakapagcelebrate ka kahit kontii and sana naenjoy mo yung gifts na binigay ko. At this point honestly, di pa alam ng parents ko about what we had noon pero, I was for some reason, able to buy those gifts. Kung di ko mabili, ill ask someone else and all that, as long as i can make your birthday even kahit konting special because i knew how busy you were going to be that day. I hope you stopped by to greet yourself happt birthday on that day and had funn."
+                    break;
+                case 6:
+                    message.innerHTML = "Birthday ito ni bree i think and nag doha oasis tayo. I believe this was one of the really first like our proper gala with you and im happy to have spent it with you all esp ikaw ofc. Atp, di ko masyadong alam pano kita iaapproach pero nearing the end of the gala i got to talk to you a bit more normally and I was so proud of that moment kasi I was able to connect w u even if it was just for a little while. I loved every part of the gala and all the time I spent with you din w all of the ridess and I hope you felt the same way din noon"
+                    break;
+                case 7:
+                    message.innerHTML = "I remember this day like it was yesterday HAHAHHAHAHA kasi kumain ako ng spicy and you were trying tobtell me not to anymore and I just kept on eating it HAHHAHA wala langg just a funny experience lang with youu thats why i put it heree"
+                    break;
+                case 8:
+                    message.innerHTML = "This was one of what i think is like the most important day of what weve been through. I never expected it would go this way. Ito yung time na i ask you kung pwede tayo pumunta sa lighthouse and walked together there. It was I think the first time I got to spend a pretty long time being together with you alone and kahit ngayon i still yearn for that experience ulit, it was so refreshing na sabihin sayo ano yung gusto kong sabihin at ano yung gusto kong tanungin. It was at that moment i just let go of lahat ng takot or like anything that i felt and went to ask you how you felt about me and more. And Im proud na nagawa ko yun since not only did i get yung peace of mind but also i was able to make you get that same peace of mind(hopefully) thank you for that, thank you for holding my hand, and thank you for making such an unforgettable experience para sakin even kung kahit a short while langg"
+                    break;
+                case 9:
+                    message.innerHTML = "Di ko alam yung date para dito pero its one of the pictures I took of you when you achieved high honorss. I put this here kasi gusto ko lang iremind sayo na im proud sobra about lahat ng achievements mo kahit maliit o malaki, ill always be proud of what you got and what you have, ill always be proud of you being you and ill always be happy kapag your being yourself lagi. I love everything that you have going on for you, i love all of your imperfections, and i love all of you for you and ill always be content w it:)"
+                    break;
+                case 10:
+                    message.innerHTML = "This one was woahh. It was the first time na i was able to be teamed up w you sa competition. It was a fun competition and it was smth that i would cherish forever even though it was something so difficult to do. I know gaano kahirap yung mga ginawa natin pero in the end we ended up succeeding and it just shows me kung paano tayo kayang maging successful o kayang gumawa ng solusyon sa lahat ng problema na mayroon tayoo"
+                    break;
+                case 11:
+                    message.innerHTML = "This right here is one of my wallpapers amongst so many pictures na meron tayo and meron akong good reason kung bat ganon. I believe na this is one of the pictures kung saan nakikita ko yung future natin. DI SA FORTUNE TELLER HA HAHAHHAHA peroo sa picture na toh naiimagine ko na kapag naging successful tayong dalawa at nakamit na natin yung mga gusto natin at sanaa sana gusto pa rin natin ang isat isa. Lagi akong maghihintay sa time na panalo tayong dalawang magkasama at baka sa kinabukasann, pwede ulit nating picturan sarili natin na may gantong outfit kapag matanda na tayo tas ako computer scientist tas ikaw sa kung saan mong gustong field sa medicine or medical related fieldss. But before thenn, lagi kitang susuportahan sa lahat and i mean it, sa kahit ano mang paraan para makamit mo ang gusto mo o ang goal mo, nandito ako lagi para diyan, nandito ako lagii susuportahan ka at nandito ako lagi para sayo anytime louise<3"
+                    break;
+                case 12:
+                    message.innerHTML = "Suri ang cringe ko dito o ang tagal kitang niyakap during this time so baka naging uncomfy ka suri kung ganonn poww. Peroo this day, maaalala ko toh as the final day na makikita ko kayong lahat in school. It marked nung huling time na estudyante ako sa pisq and im glad i was able to spend it with everyone especially you. This was the first time din that nasabi ko sayo na mahal kita, and til now, never ko yung itatake backk, in fact, mas lalo pang lumalaki yung nararamdaman ko sayo by each passing minute kahit man wala ka o nandito ka sa tabi ko, mamahalin kita not for your looks or for your personality lang pero for you being the louiselane na kilala ko<3"
+                    break;
+                case 13:
+                    message.innerHTML = "Ito na, ang huli kong time na nasa pisq pa rin ako. This time, ito na yung huli and thats fine, kasi i knew na makakamit ko ang gusto ko at kahit na nasa iba na kong paaralan, alam ko na magtatagumpay pa rin tayo. I was so proud talaga nung tinawag 'Plata Louiselane L.'' nung graduation, kasi I remembered at that point kung gaano ka kahardworking kung gaano ka laging nagbibigay ng effort na lahat kung gaano mong tinitry yung pinakabest mo para maging high honors ka. And sobrang sobrang proud ako sayo and I always will, i loved seeing you on the stage I loved getting the front row to see you there standing kasama magulang mo with the medals around your neck, I loved you getting the recognition you deserve kasi sobrang deserve mo rin yun. I hope na maging masaya ka pa at maging recognized ka pa sa dami mong sinasalinan at sa dami mong ginagawa, it will pay off gaya ng nangyari dun. Just know na, I'll always clap the loudest kapag ikaw ang nanalo<3"
+                    break;
+                case 14:
+                    message.innerHTML = "This was i think the first date we have pero yun nga lang accidental HAHAHHA kasi si bea. Pero anyways, it was one of the last gala na meron tayo before school and Im so lucky i had this gala because its going to set the mindset and help me get through the first days knowing na nandyan ka paa kasama ko kahit na nasa ibang paaralan na ko. I loved every moment nung nasa museo tayo and its one of the bucket lists i have in my head na to go to a museum with you, i dont rlly have a bucket list pero its basically what i tried to imagine us to be. And you fulfilled that fantasy of me being w you sa museumm. We got to see really cool stuff doon pero most importantly, alam mo ba yung pinakamaganda sa museum? Guess mo langg. Pinakamaganda sa museum ay ikaw. Suri na go na next image pls ayoko na magsalita HAHAHHAHA mwaa"
+                    break;
+
+                case 15:
+                    message.innerHTML = "Ito another lucky charmm na meron ako. It was our first photo booth and i never thought we would even get a photo togetherr. I love spending halloween w you kahit di yung proper na trick or treat, at least nakuha pa rin kita as my treat<3 hehe okay at least di na yun as corny as kanina HAHAHHAHAH peroo forill what I want to say is that I would spend anytime picturing you or picturing us together and wish na pwede akong tumira sa photograph na yun. I love spending time with you and i love it din looking back at the things we did and reliving that moment, pero as we create new moments together, mas nagugustuhan ko yun, mas nagugustuhan ko na magkasama tayo at gumagawa ng mas marami pang memories that I'd always look behind to and feel happy knowing I spent it with you."
+                    break;
+
+                case 16:
+                    message.innerHTML = "Ito malala aywahh. I am so proud kanina ko pa sinasabi yes pero at this moment, i was able to spend it with you. I was able to say na we both won. Kahit na nasa ibang team tayong dalawa, lagi pa rin akong susuporta sayo at sa atin, kahit na nasa ibang team ka even if matalo ako at ikaw mananalo, I just want to say na lahat ng achievements mo feeling ko naachieve ko rin and I'm happy to feel that way without making you a 'competition.' I'm happy feeling that I've won kapag ikaw nanalo, it's always a great feeling to win kaya it will always be a great feeling kapag ikaw nanalo, di lang ako:)"
+                    break;
+
+                case 17:
+                    message.innerHTML = "Maraming maraming salamat for taking some time out of your schedule to celebrate my bday. It was what made my bday an unforgettable one kahit na di sa exactong 16, it was you all(especially you syempre) who made my day. Being there not thinking much about research ko, was the best. And honestly, i feel like if you weren't there, all i would think about is yung research ko huhu. Anyways, thank you ulit for gracing me w your presencee HUIII HAHAHHAHA. Salamat din for those flowerss. It was the first time, i ever received flowers from anyone, even the people that had liked me noon or like anyone talaga, i never thought I would receive something like flowers kasi lagi kami as lalaki yung nagbibigay so i was really caught off guard noonn. Thank you pa rinn<3"
+                    break;
+
+                case 18:
+                    message.innerHTML = "Andd lastlyy the latest of the bunch and pinakahuling message ko na toh. Suri talaga andami kong sinasabi baka napagod ka na kakabasa sa sobrang daming messagess HAHHAHA. Newayss in this last picture, it was the first time din that I would spend a simbang gabi with you. And that's when i really knew that, kahit na walang perpekto sa mundo, ikaw lang yung nakikita kong taong perpekto para sakin. I loved spending church with you. I love na im able to be with you and I wouldn't have done it any other way talaga. I hope na what we have can develop in smth even more because I know for a fact and yes napagisipan ko na so so soo many times before and I want you to be together with me. I want to be yours. And I would love spending my time, my attention, my love, my care, and everything for you and with you. I'd love to be with you and I'll wait as long as I can and more(a very very long time) na magiging tayong dalawa kahit na long distance pa yan after high school o kahit na nasa college na tayo, I'll do lahat ng makakaya ko to wait for you, and to be with you kasi, i love you louise. Sobra. "
+                    break;
+                default:
+                    message.innerHTML = ""
+                    break;
+            }
+        
+        }
+        function exit() {
+            document.getElementById("messageBox").style.display = "none";
+        }
+    </script>
+</body>
+</html>
